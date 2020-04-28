@@ -1,0 +1,17 @@
+certifi==2021.10.8
+Cython==0.29.28
+packaging==21.3
+pandas==1.4.1
+Pillow==8.4.0
+pyparsing==3.0.7
+python-dateutil==2.8.2
+pytz==2021.3
+scipy==1.8.0
+torch==1.10.0
+torchaudio==0.10.0
+torchvision==0.11.1
+xarray==2022.3.0
+seaborn==0.11.2
+matplotlib==3.5.1
+jupyter==1.0.0
+sparsemax==0.1.9
