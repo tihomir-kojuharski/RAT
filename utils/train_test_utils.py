@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 
 from loss import SimpleLossCompute, Batch_Loss, Test_Loss, SimpleLossCompute_tst
-from pgportfolio.marketdata.datamatricesnew import DataMatricesNew
+from pgportfolio.marketdata.datamatrices import DataMatrices
 from rat.rat import make_model
 
 
@@ -479,23 +479,23 @@ class Parameters:
 
 
 def load_dataset(params: DatasetParameters):
-    return DataMatricesNew(dataset_file=params.dataset,
-                           window_size=params.x_window_size,
-                           is_permed=False,
-                           buffer_bias_ratio=5e-5,
-                           batch_size=params.batch_size,  # 128,
-                           validation_portion=params.validation_portion,
-                           test_portion=params.test_portion,
-                           dataset_assets=params.dataset_assets,
+    return DataMatrices(dataset_file=params.dataset,
+                        window_size=params.x_window_size,
+                        is_permed=False,
+                        buffer_bias_ratio=5e-5,
+                        batch_size=params.batch_size,  # 128,
+                        validation_portion=params.validation_portion,
+                        test_portion=params.test_portion,
+                        dataset_assets=params.dataset_assets,
 
-                           dataset_date_range=params.dataset_date_range,
-                           dataset_features=params.dataset_features,
-                           train_range=params.train_range,
-                           validation_range=params.validation_range,
-                           test_range=params.test_range,
+                        dataset_date_range=params.dataset_date_range,
+                        dataset_features=params.dataset_features,
+                        train_range=params.train_range,
+                        validation_range=params.validation_range,
+                        test_range=params.test_range,
 
-                           assets_per_batch=params.assets_per_batch,
-                           portion_reversed=False)
+                        assets_per_batch=params.assets_per_batch,
+                        portion_reversed=False)
 
 
 def setup_logging(output_dir: Optional[str] = None) -> None:
