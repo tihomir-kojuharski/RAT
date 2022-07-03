@@ -3,7 +3,7 @@ from datetime import datetime
 
 import torch
 
-from loss import SimpleLossCompute, Batch_Loss, SimpleLossCompute_tst, Test_Loss
+from rat.loss import SimpleLossCompute, Batch_Loss, SimpleLossCompute_tst, Test_Loss
 from pgportfolio.marketdata.datamatrices import DataMatrices
 from utils.train_test_utils import Parameters
 

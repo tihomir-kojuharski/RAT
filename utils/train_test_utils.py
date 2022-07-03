@@ -11,7 +11,7 @@ import time
 import numpy as np
 import pandas as pd
 
-from loss import SimpleLossCompute, Batch_Loss, Test_Loss, SimpleLossCompute_tst
+from rat.loss import SimpleLossCompute, Batch_Loss, Test_Loss, SimpleLossCompute_tst
 from pgportfolio.marketdata.datamatrices import DataMatrices
 from rat.rat import make_model
 
